@@ -5,9 +5,9 @@ const bodyParser=require('body-parser')
 const app = express();
 
 require('dotenv').config();
-const userRoute=require('./api/routes/user')
-const videoRoute=require('./api/routes/Video')
-const commentRoute=require('./api/routes/Comment')
+const userRoute=require('../api/routes/user')
+const videoRoute=require('../api/routes/Video')
+const commentRoute=require('../api/routes/Comment')
 const fileUpload=require("express-fileupload")
 // Connect to MongoDB
 const connectWithDatabase = async () => {   
